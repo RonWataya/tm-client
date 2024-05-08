@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triephonia Mpinganjira Foundation</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: #f4f4f4;
+            padding-top: 70px;
+            color: #333;
+        }
+        .footer {
+            padding: 20px;
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+        }
+        .footer a {
+            color: #f8f9fa;
+            margin-right: 15px;
+        }
+        .footer a:hover {
+            text-decoration: none;
+            color: #adb5bd;
+        }
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.2em;
+        }
+        .navbar {
+            background-color: #444;
+        }
+        .form-control, .btn-like {
+            border-radius: 0.25rem;
+        }
+        .btn-primary, .btn-like {
+            margin-top: 10px;
+            width: 100%;
+        }
+        .form-icon {
+            position: absolute;
+            font-size: 20px;
+            margin: 12px 0 0 10px;
+            color: #666;
+        }
+        .input-with-icon {
+            position: relative;
+            padding: 15px;
+        }
+        .input-with-icon input {
+            padding-left: 40px;
+        }
+        .heading-section {
+            background: #0056b3;
+            color: white;
+            padding: 20px 0;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Triephornia Mpinganjira Foundation</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Application <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Learn more about this program</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="container heading-section">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-center">Supporting Youth Entrepreneurship</h2>
+            </div>
+        </div>
+    </div>
+<br>
+    <!-- Application Form -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <form id="applicationForm">
+                    <div class="input-with-icon">
+                        <i class="fas fa-user form-icon"></i>
+                        <input type="text" class="form-control" id="fullname" name="fullname" placeholder="Full Name">
+                    </div>
+                    <div class="input-with-icon">
+                        <i class="fab fa-facebook form-icon"></i>
+                        <input type="text" class="form-control" id="facebook" name="facebook" placeholder="Facebook Handle">
+                    </div>
+                    <div class="input-with-icon">
+                        <i class="fas fa-phone form-icon"></i>
+                        <input type="number" class="form-control" id="phone" name="phone" placeholder="Phone Number">
+                    </div>
+                    <div class="input-with-icon">
+                    <select class="form-control" id="SelectGender">
+                        <option value="">Select Gender</option>
+                        <option value="female">Female</option>
+                        <option value="male">Male</option>
+                    </select>
+                    </div>
+                    <div class="input-with-icon">
+                        <select class="form-control" id="SelectDistrict">
+                            <option value="">Select District</option>
+                            <option value="balaka">Balaka</option>
+                            <option value="blantyre">Blantyre</option>
+                            <option value="chikwawa">Chikwawa</option>
+                            <option value="chiradzulu">Chiradzulu</option>
+                            <option value="chitipa">Chitipa</option>
+                            <option value="dedza">Dedza</option>
+                            <option value="dowa">Dowa</option>
+                            <option value="karonga">Karonga</option>
+                            <option value="kasungu">Kasungu</option>
+                            <option value="likoma">Likoma</option>
+                            <option value="lilongwe">Lilongwe</option>
+                            <option value="machinga">Machinga</option>
+                            <option value="mangochi">Mangochi</option>
+                            <option value="mchinji">Mchinji</option>
+                            <option value="mulanje">Mulanje</option>
+                            <option value="mwanza">Mwanza</option>
+                            <option value="mzimba">Mzimba</option>
+                            <option value="ntcheu">Ntcheu</option>
+                            <option value="ntchisi">Ntchisi</option>
+                            <option value="phalombe">Phalombe</option>
+                            <option value="rumphi">Rumphi</option>
+                            <option value="salima">Salima</option>
+                            <option value="thyolo">Thyolo</option>
+                            <option value="zomba">Zomba</option>
+                            <option value="nkhotakota">Nkhotakota</option>
+                            <option value="nsanje">Nsanje</option>
+                        </select>
+                        
+                    </div>
+                    <div class="input-with-icon">
+                    <textarea class="form-control" id="businessIdea" rows="5" placeholder="Describe your business idea not in less than 300 words"></textarea>
+                    </div>
+                    <button type="button" class="btn btn-like" style="background-color: rgb(39, 39, 236); color: white;" onclick="simulateLike()">Like our Facebook page to submit</button>
+                    <button type="submit" class="btn btn-primary" id="submitBtn" disabled>Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </div>
+<!-- Modal -->
+<div class="modal fade" id="feedbackModal" tabindex="-1" aria-labelledby="feedbackModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="feedbackModalLabel">Feedback</h5>
+          <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="color: #0056b3;">
+          <!-- Feedback message will be inserted here -->
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+      </div>
+    </div>
+  </div>
+  
+    <!-- Footer -->
+    <footer class="footer mt-5">
+        <div class="container">
+            <p>Follow us on social media</p>
+            <a href="https://facebook.com/ronnexk" target="_blank">Facebook</a>
+            <a href="https://instagram.com/ronnexk" target="_blank">Instagram</a>
+            <p class="mt-3">Contact us: +0991 448 707 | tm@gmail.com</p>
+        </div>
+    </footer>
+
+    
+    <script src="js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+        
+
+</body>
+</html>

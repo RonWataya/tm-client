@@ -1,0 +1,60 @@
+<div class="col-md-8 offset-md-2">
+    <form id="applicationForm">
+        <!-- Full name input -->
+        <div class="form-group">
+            <label for="fullname">Full Name:</label>
+            <input type="text" class="form-control" id="fullname" name="fullname" placeholder="e.g. John Doe">
+        </div>
+
+        <!-- Facebook handle input -->
+        <div class="form-group">
+            <label for="facebook">Facebook handle:</label>
+            <input type="text" class="form-control" id="facebook" name="facebook" placeholder="e.g. @doejohn">
+        </div>
+
+        <!-- Phone input -->
+        <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="number" class="form-control" id="phone" name="phone" placeholder="e.g. 09999999">
+        </div>
+
+        <!-- Gender selection -->
+        <div class="form-group">
+            <label for="SelectGender">Gender:</label>
+            <select class="form-control" id="SelectGender">
+                <option value="">-- Please Select --</option>
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+            </select>
+        </div>
+
+        <!-- District selection -->
+        <div class="form-group">
+            <label for="SelectDistrict">District:</label>
+            <select class="form-control" id="SelectDistrict">
+                <option value="">-- Please Select --</option>
+                <option value="blantyre">Blantyre</option>
+                <option value="chikwawa">Chikwawa</option>
+                <option value="chiradzulu">Chiradzulu</option>
+                <option value="chitipa">Chitipa</option>
+                <option value="dedza">Dedza</option>
+            </select>
+        </div>
+
+        <!-- Business idea textarea -->
+        <div class="form-group">
+            <label for="businessIdea">Business Idea:</label>
+            <textarea class="form-control" id="businessIdea" rows="5" placeholder="Describe your business idea"></textarea>
+        </div>
+
+        <!-- Like our Facebook page -->
+        <div class="form-group">
+            <button type="button" id="likeFbBtn" class="btn btn-info">Like our Facebook page to activate Submit</button>
+        </div>
+
+        <!-- Submit button -->
+        <div class="form-group">
+            <button type="submit" id="submitBtn" class="btn btn-primary" disabled>Submit Application</button>
+        </div>
+    </form>
+</div>
