@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 business_idea: document.getElementById("businessIdea").value
             };
 
-            fetch('http://localhost:2000/registration', {
+            fetch('http://ec2-44-203-48-186.compute-1.amazonaws.com:2000/registration', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
