@@ -62,6 +62,6 @@ document.addEventListener("DOMContentLoaded", function() {
         const businessIdea = document.getElementById("businessIdea").value;
         const wordCount = businessIdea.trim().split(/\s+/).length;
 
-        return fullname && facebook && phone && gender && district && businessIdea && wordCount >= 300;
+        return fullname && facebook && phone && gender && district && businessIdea && wordCount >= 200;
     }
 });

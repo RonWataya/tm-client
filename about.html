@@ -62,6 +62,10 @@
             border-radius: 8px;
             margin-bottom: 20px;
         }
+        img.responsive-img {
+            max-width: 100%;
+            height: auto;
+        }
     </style>
 </head>
 <body>
@@ -91,7 +95,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <img src="img/mpinganjira.jpg" height="700" width="700">
+                <img src="img/mpinganjira.jpg" alt="Image of Triephonia Mpinganjira" class="responsive-img">
             </div>
         </div>
     </div>
@@ -109,11 +113,6 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-    <script>
-        function activateSubmit() {
-            alert("Thank you for liking our Facebook page!");
-            document.getElementById("submitBtn").disabled = false;
-        }
-    </script>
+   
 </body>
 </html>
